@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: Pichau
+Build-Jdk: 19
+Main-Class: com.trabalho.MainApp
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trabalho.FXMLController">
+   <children>
+      <VBox layoutX="5.0" layoutY="3.0" prefHeight="519.0" prefWidth="711.0">
+         <children>
+            <TableView fx:id="tbAlunos" prefHeight="208.0" prefWidth="646.0">
+              <columns>
+                <TableColumn fx:id="colunaNome" prefWidth="238.0" text="Nome" />
+                <TableColumn fx:id="colunaN1" prefWidth="109.0" text="Primeira Nota" />
+                  <TableColumn fx:id="colunaN2" prefWidth="113.0" text="Segunda Nota" />
+                  <TableColumn fx:id="colunaMedia" prefWidth="111.0" text="Média" />
+                  <TableColumn fx:id="colunaSituacao" prefWidth="146.0" text="Situação" />
+              </columns>
+            </TableView>
+            <Label text="Cadastro" textOverrun="CLIP">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNome" promptText="Nome" style="-fx-alignment: red;" />
+            <Label fx:id="lblNome" textFill="RED" />
+            <TextField fx:id="txtN1" promptText="Primeira Nota" />
+            <Label fx:id="lblN1" textFill="RED" />
+            <TextField fx:id="txtN2" promptText="Segunda Nota" />
+            <Label fx:id="lblN2" textFill="RED" />
+            <Button fx:id="btnCadastrar" mnemonicParsing="false" onAction="#clickCadastro" text="Cadastrar" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
